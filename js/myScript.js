@@ -1,51 +1,29 @@
 //Code to get a smooth scroll from menu items to section
 
-$(document).ready(function() {
-  function filterPath(string) {
-    return string
-      .replace(/^\//, '')
-      .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
-      .replace(/\/$/, '');
-  }
-  var locationPath = filterPath(location.pathname);
-  var scrollElem = scrollableElement('html', 'body');
+// slide effects - top
+$("#nav-heading").on("click", function() {
+    $('html, body').animate({
+        scrollTop: $("#heading").offset().top
+    }, 1000);
+});
 
-  $('a[href*=#]').each(function() {
-    var thisPath = filterPath(this.pathname) || locationPath;
-    if (locationPath == thisPath && (location.hostname == this.hostname || !this.hostname) && this.hash.replace(/#/, '')) {
-      var $target = $(this.hash),
-        target = this.hash;
-      if (target) {
-        var targetOffset = $target.offset().top;
-        $(this).click(function(event) {
-          event.preventDefault();
-          $(scrollElem).animate({
-            scrollTop: targetOffset
-          }, 200, function() {
-            location.hash = target;
-          });
-        });
-      }
-    }
-  });
+// slide effects - portfolio
+$("#nav-portfolio").on("click", function() {
+    $('html, body').animate({
+        scrollTop: $("#portfolio").offset().top
+    }, 1000);
+});
 
-  // use the first element that is "scrollable"
-  function scrollableElement(els) {
-    for (var i = 0, argLength = arguments.length; i < argLength; i++) {
-      var el = arguments[i],
-        $scrollElement = $(el);
-      if ($scrollElement.scrollTop() > 0) {
-        return el;
-      } else {
-        $scrollElement.scrollTop(1);
-        var isScrollable = $scrollElement.scrollTop() > 0;
-        $scrollElement.scrollTop(0);
-        if (isScrollable) {
-          return el;
-        }
-      }
-    }
-    return [];
-  }
+// slide effects
+$("#nav-about-me").on("click", function() {
+    $('html, body').animate({
+        scrollTop: $("#about-me").offset().top
+    }, 1000);
+});
 
+// slide effects
+$("#nav-contact").on("click", function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 1000);
 });
