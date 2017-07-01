@@ -1,3 +1,7 @@
+/****** Variables *****/
+
+$white-font: #fff;
+
 /****** Main Styles *****/
 
 html,
@@ -32,8 +36,8 @@ section {
 }
 
 .separator-light {
-    border-top: solid 5px #fff;
-    color: #fff;
+    border-top: solid 5px $white-font;
+    color: $white-font;
 }
 
 .separator-dark {
@@ -47,12 +51,11 @@ section {
 
 /* Navigation Styles */
 
-#navigation {
-    padding: 0;
-}
-
 .navbar {
     margin: 0;
+    #navigation {
+        padding: 0;
+    }
 }
 
 #mobile-nav {
@@ -67,6 +70,12 @@ section {
     background: transparent;
     min-height: 100%;
     position: relative;
+    background: url("../images/NRS_1154.jpg") center center fixed no-repeat;
+    background-size: cover;
+    .intro-text {
+        color: $white-font;
+        padding: 18% 0;
+    }
 }
 
 #heading:before {
@@ -78,21 +87,6 @@ section {
     top: 0px;
     left: 0px;
     /*By using the before psuedo-class, I can have the background image and apply a filter*/
-    background: url("../images/NRS_1154.jpg") center center fixed no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-filter: brightness(50%);
-    -moz-filter: brightness(50%);
-    -o-filter: brightness(50%);
-    -ms-filter: brightness(50%);
-    filter: brightness(50%);
-}
-
-.intro-text {
-    color: #fff;
-    padding: 100px 0;
 }
 
 
@@ -116,7 +110,7 @@ figure img {
 
 figure figcaption {
     padding: 2em;
-    color: #fff;
+    color: $white-font;
     text-transform: uppercase;
     font-size: 1.25em;
     -webkit-backface-visibility: hidden;
@@ -231,7 +225,7 @@ div.portfolio-item {
 #about-me {
     font-size: 1.5em;
     background: #43b743;
-    color: #fff;
+    color: $white-font;
 }
 
 
@@ -318,14 +312,14 @@ div.portfolio-item {
 
 @media only screen and (min-width: 768px) and (max-width: 950px) {
     .intro-text {
-        color: #fff;
-        padding: 200px 0;
+        color: $white-font;
+        padding: 18% 0;
     }
 }
 
 @media only screen and (min-width: 950px) {
     .intro-text {
         color: #fff;
-        padding: 300px 0;
+        padding: 18% 0;
     }
 }
