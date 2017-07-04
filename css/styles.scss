@@ -214,8 +214,8 @@ div.portfolio-item {
     background: #43b743;
     color: $white-font;
     .container {
-        padding-top: 6.5%;
-        padding-bottom: 7%;
+        padding-top: 8%;
+        padding-bottom: 8%;
     }
 }
 
@@ -304,14 +304,14 @@ div.portfolio-item {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 9$fifty) {
+@media only screen and (min-width: 768px) and (max-width: 950px) {
     .intro-text {
         color: $white-font;
         padding: 18% 0;
     }
 }
 
-@media only screen and (min-width: 9$fifty) {
+@media only screen and (min-width: 950px) {
     .intro-text {
         color: $white-font;
         padding: 18% 0;
