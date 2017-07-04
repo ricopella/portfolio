@@ -164,6 +164,9 @@ div.portfolio-item {
     padding-top: 6.5%;
     padding-bottom: 7%; }
 
+#getintouch {
+  color: #333; }
+
 /*Contact Section Styles */
 .social {
   list-style: none;
@@ -176,7 +179,7 @@ div.portfolio-item {
     color: #fc6e51;
     width: 50px;
     height: 50px; }
-  .social #free-code-camp,
+  .social #twitter,
   .social #github,
   .social #linked-in,
   .social #instagram {
