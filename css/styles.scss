@@ -107,7 +107,7 @@ figure {
     }
     figcaption {
         padding: 2em;
-        color: $white-font;
+        color: #fff;
         text-transform: uppercase;
         font-size: 1.25em;
         -webkit-backface-visibility: hidden;
@@ -151,60 +151,50 @@ figure {
     }
 }
 
-.effect-portfolio {
+figure.effect-portfolio {
     background: #333;
+    img,
+    h2 {
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+    }
+    img {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    h2,
+    p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 30px;
+    }
+    p {
+        text-transform: none;
+        font-size: 90%;
+        opacity: 0;
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
+        -webkit-transform: translate3d(0, 50px, 0);
+        transform: translate3d(0, 50px, 0);
+    }
 }
 
-.effect-portfolio img,
-.effect-portfolio h2 {
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-}
-
-.effect-portfolio img {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.effect-portfolio h2,
-.effect-portfolio p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 30px;
-}
-
-.effect-portfolio p {
-    text-transform: none;
-    font-size: 90%;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0, 50px, 0);
-    transform: translate3d(0, 50px, 0);
-}
-
-.effect-portfolio:hover img {
+figure.effect-portfolio:hover img {
     -webkit-transform: translate3d(0, -80px, 0);
     transform: translate3d(0, -80px, 0);
 }
 
-.effect-portfolio:hover h2 {
+figure.effect-portfolio:hover h2 {
     -webkit-transform: translate3d(0, -100px, 0);
     transform: translate3d(0, -100px, 0);
 }
 
-.effect-portfolio:hover p {
+figure.effect-portfolio:hover p {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
-
-
-/* Anchor will cover the whole item by default */
-
-
-/* For some effects it will show as a button */
 
 div.portfolio-item {
     padding-bottom: 2%;
@@ -229,28 +219,25 @@ div.portfolio-item {
 .social {
     list-style: none;
     padding: 0px;
-}
-
-.social li {
-    display: inline;
-    margin: 10px;
-}
-
-.social li a {
-    display: inline-block;
-    color: #fc6e51;
-    width: 50px;
-    height: 50px;
-}
-
-#free-code-camp,
-#github,
-#linked-in,
-#instagram {
-    border-radius: 50%;
-    border: solid 2px #43b743;
-    font-size: 1.5em;
-    padding: 10px;
+    li {
+        display: inline;
+        margin: 10px;
+    }
+    li a {
+        display: inline-block;
+        color: #fc6e51;
+        width: 50px;
+        height: 50px;
+    }
+    #free-code-camp,
+    #github,
+    #linked-in,
+    #instagram {
+        border-radius: 50%;
+        border: solid 2px #43b743;
+        font-size: 1.5em;
+        padding: 10px;
+    }
 }
 
 
