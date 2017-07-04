@@ -5,7 +5,7 @@ body {
   height: 100%; }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
 
 h1,
 h2,
@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase; }
 
 /* table display for vertical centering */
@@ -186,7 +186,7 @@ div.portfolio-item {
     padding: 10px; }
 
 /* Media Queries */
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 9 50px) {
   figure.effect-portfolio p {
     font-size: 90%; }
   figure h2 {
@@ -222,12 +222,12 @@ div.portfolio-item {
     -webkit-transform: none;
     transform: none; } }
 
-@media only screen and (min-width: 768px) and (max-width: 950px) {
+@media only screen and (min-width: 768px) and (max-width: 9 50px) {
   .intro-text {
     color: #fff;
     padding: 18% 0; } }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 9 50px) {
   .intro-text {
     color: #fff;
     padding: 18% 0; } }

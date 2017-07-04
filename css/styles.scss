@@ -1,6 +1,12 @@
 /****** Variables *****/
 
 $white-font: #fff;
+$font-size: 1.5em;
+$body-font: 'Lato',
+sans-serif;
+$header-font: 'Montserrat',
+sans-serif;
+$fifty: 50px;
 
 /****** Main Styles *****/
 
@@ -10,7 +16,7 @@ body {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: $body-font;
 }
 
 h1,
@@ -19,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $header-font;
     text-transform: uppercase;
 }
 
@@ -27,8 +33,8 @@ h6 {
 /* table display for vertical centering */
 
 section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: $fifty;
+    padding-bottom: $fifty;
 }
 
 .separator {
@@ -175,8 +181,8 @@ figure.effect-portfolio {
         opacity: 0;
         -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
         transition: opacity 0.35s, transform 0.35s;
-        -webkit-transform: translate3d(0, 50px, 0);
-        transform: translate3d(0, 50px, 0);
+        -webkit-transform: translate3d(0, $fifty, 0);
+        transform: translate3d(0, $fifty, 0);
     }
 }
 
@@ -204,7 +210,7 @@ div.portfolio-item {
 /* About Styles */
 
 #about-me {
-    font-size: 1.5em;
+    font-size: $font-size;
     background: #43b743;
     color: $white-font;
     .container {
@@ -226,8 +232,8 @@ div.portfolio-item {
     li a {
         display: inline-block;
         color: #fc6e51;
-        width: 50px;
-        height: 50px;
+        width: $fifty;
+        height: $fifty;
     }
     #free-code-camp,
     #github,
@@ -235,7 +241,7 @@ div.portfolio-item {
     #instagram {
         border-radius: 50%;
         border: solid 2px #43b743;
-        font-size: 1.5em;
+        font-size: $font-size;
         padding: 10px;
     }
 }
@@ -243,7 +249,7 @@ div.portfolio-item {
 
 /* Media Queries */
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 9$fifty) {
     figure.effect-portfolio p {
         font-size: 90%
     }
@@ -292,16 +298,16 @@ div.portfolio-item {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 950px) {
+@media only screen and (min-width: 768px) and (max-width: 9$fifty) {
     .intro-text {
         color: $white-font;
         padding: 18% 0;
     }
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 9$fifty) {
     .intro-text {
-        color: #fff;
+        color: $white-font;
         padding: 18% 0;
     }
 }
