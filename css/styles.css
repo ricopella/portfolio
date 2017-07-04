@@ -96,52 +96,45 @@ figure {
     left: 0;
     width: 100%;
     height: 100%; }
+  figure figcaption > a {
+    /*Hides View More Text from view in links*/
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0; }
+  figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300; }
+  figure h2 span {
+    font-weight: 700; }
+  figure h2,
+  figure p {
+    margin: 0; }
+  figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%; }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-figure figcaption > a {
-  /*Hides View More Text from view in links*/
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0; }
-
-figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300; }
-
-figure h2 span {
-  font-weight: 700; }
-
-figure h2,
-figure p {
-  margin: 0; }
-
-figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%; }
-
-figure.effect-portfolio {
+.effect-portfolio {
   background: #333; }
 
-figure.effect-portfolio img,
-figure.effect-portfolio h2 {
+.effect-portfolio img,
+.effect-portfolio h2 {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s; }
 
-figure.effect-portfolio img {
+.effect-portfolio img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-figure.effect-portfolio h2,
-figure.effect-portfolio p {
+.effect-portfolio h2,
+.effect-portfolio p {
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 30px; }
 
-figure.effect-portfolio p {
+.effect-portfolio p {
   text-transform: none;
   font-size: 90%;
   opacity: 0;
@@ -150,19 +143,21 @@ figure.effect-portfolio p {
   -webkit-transform: translate3d(0, 50px, 0);
   transform: translate3d(0, 50px, 0); }
 
-figure.effect-portfolio:hover img {
+.effect-portfolio:hover img {
   -webkit-transform: translate3d(0, -80px, 0);
   transform: translate3d(0, -80px, 0); }
 
-figure.effect-portfolio:hover h2 {
+.effect-portfolio:hover h2 {
   -webkit-transform: translate3d(0, -100px, 0);
   transform: translate3d(0, -100px, 0); }
 
-figure.effect-portfolio:hover p {
+.effect-portfolio:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
 div.portfolio-item {
   padding-bottom: 2%; }
 
@@ -171,6 +166,9 @@ div.portfolio-item {
   font-size: 1.5em;
   background: #43b743;
   color: #fff; }
+  #about-me .container {
+    padding-top: 6.5%;
+    padding-bottom: 7%; }
 
 /*Contact Section Styles */
 .social {
