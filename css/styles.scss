@@ -102,7 +102,7 @@ figure {
     position: relative;
     overflow: hidden;
     margin: 10px auto;
-    max-width: 578px;
+    max-width: 568px;
     max-height: 398px;
     height: auto;
     cursor: pointer;
@@ -159,6 +159,7 @@ figure {
 
 figure.effect-portfolio {
     background: #333;
+    margin: 0 auto;
     img,
     h2 {
         -webkit-transition: -webkit-transform 0.35s;
