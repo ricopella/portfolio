@@ -62,6 +62,9 @@ section {
     #navigation {
         padding: 0;
     }
+    .nav li:hover {
+        text-decoration: underline;
+    }
 }
 
 #mobile-nav {

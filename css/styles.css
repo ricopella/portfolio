@@ -39,6 +39,8 @@ section {
   margin: 0; }
   .navbar #navigation {
     padding: 0; }
+  .navbar .nav li:hover {
+    text-decoration: underline; }
 
 #mobile-nav {
   font-size: 1.4em;
