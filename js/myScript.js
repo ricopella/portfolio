@@ -26,6 +26,12 @@ $("#nav-about-me").on("click", () => {
     }, 1000);
 });
 
+$("#nav-skills").on("click", () => {
+    $('html, body').animate({
+        scrollTop: $("#skills").offset().top
+    }, 1000);
+});
+
 // slide effects
 $("#nav-contact").on("click", () => {
     $('html, body').animate({
