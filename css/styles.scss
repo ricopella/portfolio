@@ -281,6 +281,10 @@ div.portfolio-item {
     align-items: flex-start;
 }
 
+img.skills-logo.mocha {
+    max-width: 10%;
+}
+
 .skills-logo {
     max-width: 8%;
     margin: 0px 6px;
@@ -290,10 +294,6 @@ div.portfolio-item {
 img.skills-logo.firebase,
 img.skills-logo.gulp {
     max-width: 6%;
-}
-
-img.skills-logo.mocha {
-    max-width: 10%;
 }
 
 
