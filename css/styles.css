@@ -220,6 +220,9 @@ img.skills-logo.firebase,
 img.skills-logo.gulp {
   max-width: 6%; }
 
+img.skills-logo.mocha {
+  max-width: 10%; }
+
 /* Media Queries */
 @media only screen and (max-width: 9 50px) {
   figure.effect-portfolio p {
