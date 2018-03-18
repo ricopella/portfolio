@@ -1,4 +1,4 @@
-/****** Variables *****/
+
 /****** Main Styles *****/
 html,
 body {
@@ -65,7 +65,7 @@ section {
   z-index: -1;
   top: 0px;
   left: 0px;
-  /*By using the before psuedo-class, I can have the background image and apply a filter*/ }
+}
 
 /* Portfolio Section Styles */
 section#portfolio {

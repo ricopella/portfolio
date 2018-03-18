@@ -2,7 +2,7 @@
 
 # Overview
 
-Personal portofolio website using responsive design
+Personal portfolio website using responsive design
 
 Live version can be viewed at [narinsun.com](narinsun.com)
 
@@ -17,6 +17,6 @@ Built With: HTML5, Sass, Bootstrap, Javascript, and Gulp
 
 # History
 
-* Last Updated: 8/13/17
+* Last Updated: 03/18/18
 
 * Created: 1/6/17
